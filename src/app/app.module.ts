@@ -10,6 +10,9 @@ import { WidgetsComponent } from './widgets/widgets.component';
     AppComponent,
     WidgetsComponent
   ],
+  exports: [
+    WidgetsComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule
