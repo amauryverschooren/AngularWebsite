@@ -11,6 +11,7 @@ import { WidgetsComponent } from './widgets/widgets.component';
     WidgetsComponent
   ],
   exports: [
+    AppComponent,
     WidgetsComponent
   ],
   imports: [
