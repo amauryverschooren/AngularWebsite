@@ -14,5 +14,5 @@ export class WidgetsComponent implements OnInit {
   ChangeColor() { }
   checkValue(event: any) {
     console.log(event);
- }
-}
+ }}
+ 
