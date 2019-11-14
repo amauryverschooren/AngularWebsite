@@ -11,11 +11,8 @@ export class WidgetsComponent implements OnInit {
 
   ngOnInit() {
   }
-  ChangeColor(){
-
-  }
-  checkValue(event: any){
+  ChangeColor() { }
+  checkValue(event: any) {
     console.log(event);
  }
- 
 }

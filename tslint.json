@@ -85,6 +85,11 @@
     "use-lifecycle-interface": true,
     "use-pipe-transform-interface": true
   },
+  "no-trailing-whitespace": true,
+  "ignore-template-strings": true,
+  "ignore-comments": true,
+  "ignore-jsdoc": true,
+  "ignore-blank-lines": true, 
   "rulesDirectory": [
     "codelyzer"
   ]

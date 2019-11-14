@@ -17,7 +17,6 @@ import { WidgetsComponent } from './widgets/widgets.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
