@@ -1,7 +1,7 @@
-import { TestBed, async } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
-import { WidgetsComponent } from './widgets/widgets.component';
+import {TestBed, async} from '@angular/core/testing';
+import {RouterTestingModule} from '@angular/router/testing';
+import {AppComponent} from './app.component';
+import {WidgetsComponent} from './widgets/widgets.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -29,10 +29,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('AngularWebsite');
   });
 
-  it('should redirect to the correct page', function(){
+  it('should redirect to the correct page', () => {
     expect(element(by.id('DigitapLink')).getAttribute('href')).toEqual('https://learning.ap.be/');
-});
-  
+  });
+
   // it('should render title', () => {
   //   const fixture = TestBed.createComponent(AppComponent);
   //   fixture.detectChanges();
