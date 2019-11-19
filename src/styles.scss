@@ -1,2 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import './app/app.component';
+
+:root {
+  --primary-color: #96150c;
+  --font-color: #ced8ca;
+  --bg-color: #FFFFFF;
+}
+
+[data-theme="dark"] {
+  --primary-color: #96150c;
+  --font-color: #151515;
+  --bg-color: #1c1c1c;
+}
