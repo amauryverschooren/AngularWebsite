@@ -113,13 +113,6 @@ header nav li a {
   cursor: pointer;
 }
 
-#resolveLight {
-  display: none;
-}
-
-#resolveDark {
-  display: none;
-}
 
 #overlayWeer {
   position: fixed;
@@ -220,7 +213,7 @@ label {
 }
 
 .Weer {
-  display: none;
+  display: content;
 }
 
 @media(max-width: 360px) {

@@ -18,3 +18,13 @@
     --nav-ul: #454545;
     --calendar: #454545;
 }
+.divDarkMode{
+  display: none;
+}
+[data-theme="dark"] .divDefault{
+  display: none;
+}
+[data-theme="dark"] .divDarkMode{
+  display: block;
+  color:#ffffff;
+}
