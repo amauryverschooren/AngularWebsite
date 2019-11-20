@@ -2,13 +2,19 @@
 @import './app/app.component';
 
 :root {
-  --primary-color: #96150c;
-  --font-color: #ced8ca;
-  --bg-color: #FFFFFF;
+  --body: #FFFFFF;
+  --link-div: #96150c;
+  --footer: #96150c;
+  --nav-ul: #96150c;
+  --calendar: #96150c;
+  --font-color: #ffffff;
+  --switch-dm-color: #96150c;
 }
 
 [data-theme="dark"] {
-  --primary-color: #96150c;
-  --font-color: #151515;
-  --bg-color: #1c1c1c;
+    --body: #252525;
+    --link-div: #404040;
+    --footer: #404040;
+    --nav-ul: #454545;
+    --calendar: #454545;
 }
