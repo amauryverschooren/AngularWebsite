@@ -85,7 +85,7 @@ img {
 }
 
 footer {
-  background-color: rgb(150, 21, 12);
+  background-color: var(--link-div);
   padding: 0.1em;
   color: var(--font-color);
   text-align: center;
@@ -109,7 +109,7 @@ header nav li a {
 
 .menuBtn {
   display: inline;
-  text-align: left;
+margin-left: 45%;
   cursor: pointer;
 }
 
@@ -130,6 +130,7 @@ header nav li a {
 
 .menuBtn img {
   height: 40px;
+  width: 40px;
   position: relative;
 }
 
@@ -214,6 +215,12 @@ label {
 
 .Weer {
   display: content;
+}
+#navigation-list{
+  display: none;
+}
+.Widgets{
+  display: none;
 }
 
 @media(max-width: 360px) {

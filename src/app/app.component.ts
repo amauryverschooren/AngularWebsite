@@ -18,11 +18,13 @@ export class AppComponent {
     } else {
       document.getElementsByTagName('body').item(0).removeAttribute('data-theme');
     }
-
-
-    
   }
-
+  showWeather(){
+    document.getElementById("overlayWeer").style.display = "block";
+  }
+  hideWeather(){
+    document.getElementById("overlayWeer").style.display = "none";
+  }
   constructor(){
     this.Datum = new Date();
   }

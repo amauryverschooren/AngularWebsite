@@ -8,20 +8,20 @@
     <p>
         
         AC DASHBOARD
-        <span class="menuBtn">
-            <img src="Images/icon2.svg" alt="Toggle Button">
-        </span>
+        
     </p>
-    <nav id="navigation-list">
-        <ul>
-            <li><a onclick="OnWeer()">Weer</a></li>
-        </ul>
-    </nav>
+    <span class="menuBtn">
+        <img src="./assets/icon.png" alt="Toggle Button"  (click)="showWeather()">
+    </span>
 </header>
 
-<div id="overlayWeer" onclick="OffWeer()">
-    <div id="resolveLight"><a class="weatherwidget-io" href="https://forecast7.com/nl/51d224d40/antwerp/" data-label_1="ANTWERPEN" data-label_2="WEERBERICHT" data-theme="pure" >ANTWERPEN WEERBERICHT</a></div>
-    <div id="resolveDark"><a class="weatherwidget-io" href="https://forecast7.com/nl/51d224d40/antwerp/" data-label_1="ANTWERPEN" data-label_2="WEERBERICHT" data-theme="pure" data-basecolor="#252525" data-textcolor="#ffffff" data-highcolor="#fc0606" data-lowcolor="#81c2f0" data-suncolor="#fbe127" data-mooncolor="#ffffff" data-cloudcolor="#ffffff" data-raincolor="#739fbf" >ANTWERPEN WEERBERICHT</a></div>
+<div id="overlayWeer" (click)="hideWeather()" > 
+    <div class="divDarkMode">
+        <div id="WeatherForecast"><a class="weatherwidget-io" href="https://forecast7.com/nl/51d224d40/antwerp/" data-label_1="ANTWERPEN" data-label_2="Weerbericht" data-icons="Climacons Animated" data-theme="pure" data-basecolor="#252525" data-textcolor="#ffffff" data-suncolor="#fbe127" data-cloudcolor="#ffffff" data-cloudfill="#252525" >ANTWERPEN Weerbericht</a></div>
+      </div>
+      <div class="divDefault">
+         <div id="resolveLight"><a class="weatherwidget-io" href="https://forecast7.com/nl/51d224d40/antwerp/" data-label_1="ANTWERPEN" data-label_2="Weerbericht" data-icons="Climacons Animated" data-theme="pure" >ANTWERPEN Weerbericht</a></div>
+      </div>
 </div>
 <div class="Content">
     <div class="links">
