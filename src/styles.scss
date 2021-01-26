@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import './app/app.component';
+
+:root {
+  --body: #FFFFFF;
+  --link-div: #96150c;
+  --footer: #96150c;
+  --nav-ul: #96150c;
+  --calendar: #96150c;
+  --font-color: #ffffff;
+  --switch-dm-color: #96150c;
+}
+
+[data-theme="dark"] {
+    --body: #252525;
+    --link-div: #404040;
+    --footer: #404040;
+    --nav-ul: #454545;
+    --calendar: #454545;
+}
+.divDarkMode{
+  display: none;
+}
+[data-theme="dark"] .divDefault{
+  display: none;
+}
+[data-theme="dark"] .divDarkMode{
+  display: block;
+  color:#ffffff;
+}

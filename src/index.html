@@ -1,88 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
-<link rel="icon" href="Images/icon.png" type='image/x-icon'/>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-<title>AC-DASHBOARD</title>
-<script>
-function calendar(){
-    var day=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-    var month=['January','February','March','April','May','June','July','August','September','October','November','December'];
-    var d=new Date();
-    setText('calendar-day', day[d.getDay()]);
-    setText('calendar-date', d.getDate());
-    setText('calendar-month-year', month[d.getMonth()]+' '+(1900+d.getYear()))
-};
-
-function setText(id, val){
-    if(val < 10){
-        val = '0' + val;    //add leading 0 if val < 10
-    }
-    document.getElementById(id).innerHTML = val;
-};
-
-jQuery(document).ready(function ($) {
-    // hide the menu when the page load
-    $("#navigation-list").hide();
-    // when .menuBtn is clicked, do this
-    $(".menuBtn").click(function () {
-        // open the menu with slide effect
-        $("#navigation-list").slideToggle(300);
-    });
-});
-window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-150154326-1');
-        
-        
-    
-function darkmode() {
-    if (document.getElementById("darkmodestyle").disabled == false) {
-        document.getElementById("darkmodestyle").disabled = true;
-        
-
-    } else {
-        document.getElementById("darkmodestyle").disabled = false;
-        
-    }
-}
-function load() {
-    document.getElementById("darkmodestyle").disabled = true;
-    calendar();
-}
-function OnWeer() {
-    document.getElementById("overlayWeer").style.display = "block";
-    if (document.getElementById("darkmodestyle").disabled == false){
-        document.getElementById("resolveDark").style.display = "contents";
-        document.getElementById("resolveLight").style.display = "none";
-    }else{
-        document.getElementById("resolveDark").style.display = "none";
-        document.getElementById("resolveLight").style.display = "contents";
-    }
-}
-  
-function OffWeer() {
-    document.getElementById("overlayWeer").style.display = "none";
-    $("#navigation-list").hide();
-}
-function OnAgenda() {
-    document.getElementById("overlayAgenda").style.display = "block";
-}
-  
-function OffAgenda() {
-    document.getElementById("overlayAgenda").style.display = "none";
-}
-
-
-
-    </script>
-  <meta charset="utf-8">
   <base href="/">
+  <title>AC-DASHBOARD</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body id="bodyClass">
-  <app-root></app-root>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');</script>
+ </head>
+
+<body>
+<app-root></app-root>
 </body>
+
 </html>
